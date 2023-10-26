@@ -7,9 +7,9 @@ In this cumulative lab, you will apply two nonparametric models you have just le
 ## Objectives
 
 * Practice identifying and applying appropriate preprocessing steps
-* Perform an iterative modeling process, starting from a baseline model
-* Explore multiple model algorithms, and tune their hyperparameters
-* Practice choosing a final model across multiple model algorithms and evaluating its performance
+* Perform an iterative modeling process, starting from a baseline model.
+* Explore multiple model algorithms, and tune their hyperparameters.
+* Practice choosing a final model across multiple model algorithms and evaluating its performance.
 
 ## Your Task: Complete an End-to-End ML Process with Nonparametric Models on the Forest Cover Dataset
 
@@ -47,7 +47,7 @@ df
 > * `Hillshade_3pm`: Hillshade index at 3pm, summer solstice
 > * `Horizontal_Distance_To_Fire_Points`: Horizontal dist to nearest wildfire ignition points, meters
 > * `Wilderness_Area_x`: Wilderness area designation (3 columns)
-> * `Soil_Type_x`: Soil Type designation (39 columns)
+> * `Soil_Type_x`: Soil Type designation (39 columns).
 > * `Cover_Type`: 1 for cottonwood/willow, 0 for ponderosa pine
 
 This is also an imbalanced dataset, since cottonwood/willow trees are relatively rare in this forest:
@@ -126,7 +126,7 @@ Now, instantiate a `StandardScaler`, fit it on `X_train`, and create new variabl
 
 
 ```python
-# Your code here
+# Your code here.
 ```
 
 The following code checks that everything is set up correctly:
@@ -139,7 +139,7 @@ The following code checks that everything is set up correctly:
 assert type(X) == pd.DataFrame and X.shape == (38501, 52)
 assert type(y) == pd.Series and y.shape == (38501,)
 
-# Checking the train-test split
+# Checking the train-test split.
 assert type(X_train) == pd.DataFrame and X_train.shape == (28875, 52)
 assert type(X_test) == pd.DataFrame and X_test.shape == (9626, 52)
 assert type(y_train) == pd.Series and y_train.shape == (28875,)
